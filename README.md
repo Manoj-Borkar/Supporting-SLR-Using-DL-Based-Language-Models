@@ -24,5 +24,16 @@ TABLE_FILENAME - Filename for displaying metric results.
 PRETRAINED_MODEL_NAME - [bert, sbert, baseline] possible values and the models available. Can replicate the code similarly by using other pre-trained models with respective libraries.
 WEIGHTED - [True, False] - True to use the weighted scheme
 MODE - [PREDICT, ANALYSE]: PREDICT - To make predictions and ANALYSE - To obtain results from predictions.
+LEVEL - [sentence, paragraph]: TO obtain embeddings at sentence or document level respectively.
+````
 
-* main.py is t
+* main.py - Main entry point after defining the desired configurations.
+````
+python3 main.py
+````
+* embeddings.py - Contains scripts to make use of the three models, namely 'bert-base-cased', SentenceTransformer('paraphrase-distilroberta-base-v1') and baseline model TfidfTransformer.
+* weightage.py - Methods implementing the weightage scheme mentioned in the paper.
+* preprocessing.py - For handling the data cleaning and pre-processing.
+* result_visualiser.py - To compile and store the prediction results in terms of metrics such as Fowlkes-Mallow Index and Adjusted Rand Index score. Also displays other information such as number of clusters , additional documents as part of the cluster.
+
+
