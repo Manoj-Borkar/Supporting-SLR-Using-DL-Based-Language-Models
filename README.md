@@ -1,2 +1,4 @@
 # Supporting-SLR-Using-DL-Based-Language-Models
 The repository contains code scripts for replicating experiments in the paper "Supporting Systematic Literature Reviews Using Deep-Learning-Based Language Models". In this paper, we address the tedious process of identifying relevant primary studies during the conduct phase of a Systematic Literature Review. For this purpose, we use deep learning architectures in the form of the two language models BERT and S-BERT to learn embedded representations and cluster on them to semi-automate this phase, and thus support the entire SLR process.
+
+The methodology is mainly divided into three parts : **Extracting embeddings using Language models such as BERT and SBERT**, **Weightage schemes to obtain document-level representations from weighting important sentences of the document**,**Clustering on embeddings(weighted/unweighted) to obtain clusters of relevant and non-relevant documents**
