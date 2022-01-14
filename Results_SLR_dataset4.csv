@@ -1,0 +1,7 @@
+,Model,Data,Level,CorrectPS,FMI_Score,Adj_Rand_Score,#Additional_docs,#Clusters
+0,TFIDF(baseline),Title+Abstract,Word,8 out of 9,0.69001758,-0.027563821,104,2
+1,BERT_UW,Title+Abstract,Word,6 out of 9,0.75201497,0.078764491,43,4
+2,BERT_W,Title+Abstract,Sentence,6 out of 9,0.699412508,0.030479498,59,3
+3,SBERT_W,Title+Abstract,Sentence,5 out of 9,0.744738308,0.053969332,44,3
+4,SBERT_UW,Title+Abstract,Sentence,6 out of 9,0.795567137,0.128692219,33,4
+5,SBERT_Paragraph,Title+Abstract,Paragraph,6 out of 9,0.85122899,0.217181376,22,5
